@@ -7,7 +7,7 @@
 /* getLine function take the input line as character by character
     and return the length of input line
 */
-int getLine(char str[], int lim)
+int getLine(char str[])
 {
     /* Take the input character */
     int inputChar;
@@ -16,7 +16,7 @@ int getLine(char str[], int lim)
     /* Getting input and store the input into 
         str if condition is satisfied
     */
-    for(index = 0; index < lim-1 
+    for(index = 0; index < MAXLINE-1 
         && 
         (inputChar = getchar())!= EOF 
         && 
@@ -45,7 +45,7 @@ int main()
     /* Character array in which contain whole input line*/
     char line[MAXLINE];
     /* In this loop take input */
-    while ((len = getLine(line,MAXLINE)) > 0)
+    while ((len = getLine(line)) > 0)
     {
         /* If length of input line greater than 80 print the line */
         if(len > 80)
