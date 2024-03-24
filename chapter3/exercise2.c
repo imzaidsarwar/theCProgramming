@@ -72,8 +72,6 @@ int getLine(char str[])
 }
 int main()
 {
-    /* Present total length of input line */
-    int len;
     /* Character array in which contain whole input line*/
     char s[MAXLINE], t[MAXLINE];
     /* get the input */
